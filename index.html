@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="The family book.jpg">
+    <h3 id="one">Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. My Father (Nedumaran)",
+   "2. My Mother (Mythili)",
+   "3. My younger Brother (Vishwa)",
+   "4. My Elder Sister (Harini)",
+   "5. My Elder Brother (balaji)",
+   "6. Me (Bubesh)"
+   ];
+ var images=["my dad.jpg","my mother.jpg","my brother.jpg","my sister.jpg","Elder brother.jpg","my photo.jpg"];
+ var i=0;
+ function family(){
+
+   document.getElementById("one").innerHTML=names[i]; 
+   document.getElementById("family_img").src=images[i];
+   console.log("Dislay image i="+ i);
+   i++; 
+   if(i==6){
+     i=0;
+   }
+console.log("Incrument value : i="+i);
+   }
+  </script>
+  </body>
+</html>
